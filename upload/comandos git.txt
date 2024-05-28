@@ -1,40 +1,5 @@
 cd.. (directorio proyecto)
 
-git init
-git config core.autocrlf true
-
-git add ./
-
-git commit -m ‘wp_bpa’
-
-git config --global user.email "lautaromurillo@gmail.com"
-git config --global user.name "Lautaro"
-
-
-git checkout master
-git add --all
-
-
-Enviar actualizaciones a repositorios remotos, git push
-
-git remote add origin 'direccion'
-
-Ejemplos
--------
-git remote add origin https://devops.inta.gob.ar/Informatica/Ensachetadora/_git/Ensachetadora
-git push -u origin --all
-
-git remote add origin http://devops.inta.gob.ar/Informatica/Moodle-Formulario_BPA/_git/Moodle-Formulario_BPA
-git push -u origin --all
-
-
-git remote -v 
-git remote remove origin 
-git remote add origin git@github.com:user/repo.git 
-
-git remote add origin https://github.com/lautaromurillo/wp.git
-git push -u origin --all
-
 Actualizaciones local a servidor remoto
 ---------------------------------
 Nuevos cambios
