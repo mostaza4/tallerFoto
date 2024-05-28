@@ -55,4 +55,5 @@ Como recordatorio, para crear una nueva rama debes ejecutar git branch nombre-ra
 Actualizaciones remoto a local
 ---------------------------------
 
+git fetch
 git merge
