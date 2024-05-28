@@ -3,7 +3,7 @@
 session_start();
 
 // Cargar la configuración y las dependencias necesarias
-require '../config/database.php';
+require '../config/init.php';
 require '../app/models/Post.php';
 require '../app/models/Response.php';
 require '../app/controllers/PostController.php';
@@ -24,17 +24,17 @@ switch ($i)
 {
     case 0:
         // Ruta raíz, muestra todos los posts
-        $controller = new PostController($db);
+        $controller = new PostController($db->Connect());
         $controller->index();
         break;
     case 1:
         // Ruta para crear un nuevo post
-        $controller = new PostController($db);
+        $controller = new PostController($db->Connect());
         $controller->create();
         break;
     case 2:
         // Ruta para mostrar post
-        $controller = new PostController($db);
+        $controller = new PostController($db->Connect());
         $controller->show($_POST['id']);
         break;
         
